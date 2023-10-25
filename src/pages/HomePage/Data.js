@@ -68,5 +68,5 @@ export const homeObjOne = {
     img: require('../../images/img-roof.jpg'),
     alt: 'Vault',
     start: 'true',
-    imgDropShadowColor: '#384559'
+    imgDropShadowColor: '#101522'
   };
