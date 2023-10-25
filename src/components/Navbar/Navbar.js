@@ -21,6 +21,8 @@ function Navbar() {
 
     const [homeClick, setHomeClick] = useState(false);
     const [servicesClick, setServicesClick] = useState(false);
+
+    // eslint-disable-next-line
     const [productsClick, setProductsClick] = useState(false);
 
     const handleHomeClick = () => {

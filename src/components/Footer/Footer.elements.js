@@ -1,7 +1,6 @@
-import styled from 'styled-components';
-import { FaMagento } from 'react-icons/fa';
 import { RiSunFoggyFill } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
 export const FooterContainer = styled.div`
   background-color: #101522;
