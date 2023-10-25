@@ -1,18 +1,17 @@
-import React, {useState, useEffect} from 'react'
-import { Nav, 
-    NavbarContainer, 
-    NavLogo, 
-    NavIcon, 
-    HamburgerIcon,
-    NavMenu,
-    NavItem,
-    NavLinks,
-    NavItemBtn,
-    NavBtnLink
- } from './Navbar.elements'
-import { FaTimes, FaBars } from 'react-icons/fa';
-import { IconContext } from 'react-icons/lib'
+import React, { useEffect, useState } from 'react';
+import { IconContext } from 'react-icons/lib';
 import { Button } from '../../globalStyles';
+import {
+    Nav,
+    NavBtnLink,
+    NavIcon,
+    NavItem,
+    NavItemBtn,
+    NavLinks,
+    NavLogo,
+    NavMenu,
+    NavbarContainer
+} from './Navbar.elements';
 
 
 function Navbar() {
@@ -34,11 +33,11 @@ function Navbar() {
         setProductsClick(false);
         setServicesClick(true);
     }
-    const handleProductsClick = () => {
-        setHomeClick(false);
-        setProductsClick(true);
-        setServicesClick(false);
-    }
+    // const handleProductsClick = () => {
+    //     setHomeClick(false);
+    //     setProductsClick(true);
+    //     setServicesClick(false);
+    // }
 
     const handleClick = () =>  setClick(!click);
     

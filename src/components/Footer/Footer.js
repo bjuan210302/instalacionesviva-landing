@@ -1,31 +1,20 @@
 import React from 'react';
-import { Button } from '../../globalStyles';
 import {
   FaFacebook,
   FaInstagram,
-  FaYoutube,
+  FaLinkedin,
   FaTwitter,
-  FaLinkedin
+  FaYoutube
 } from 'react-icons/fa';
 import {
   FooterContainer,
-  FooterSubscription,
-  FooterSubText,
-  FooterSubHeading,
-  Form,
-  FormInput,
-  FooterLinksContainer,
-  FooterLinksWrapper,
-  FooterLinkItems,
-  FooterLinkTitle,
-  FooterLink,
+  SocialIcon,
+  SocialIconLink,
+  SocialIcons,
+  SocialLogo,
   SocialMedia,
   SocialMediaWrap,
-  SocialLogo,
-  SocialIcon,
-  WebsiteRights,
-  SocialIcons,
-  SocialIconLink
+  WebsiteRights
 } from './Footer.elements';
 
 function Footer() {

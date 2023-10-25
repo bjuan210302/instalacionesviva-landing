@@ -1,8 +1,7 @@
+import { RiSunFoggyFill } from 'react-icons/ri';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { Container } from '../../globalStyles'
-import { FaMagento } from 'react-icons/fa'
-import { RiSunFoggyFill } from 'react-icons/ri'
-import { Link } from 'react-router-dom'
+import { Container } from '../../globalStyles';
 
 export const Nav = styled.nav`
     background: #101522;
