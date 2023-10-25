@@ -1,82 +1,83 @@
 import React from 'react';
-import { Button } from '../../globalStyles';
-import { AiFillThunderbolt } from 'react-icons/ai';
-import { GiCrystalBars } from 'react-icons/gi';
-import { GiCutDiamond, GiRock } from 'react-icons/gi';
-import { GiFloatingCrystal } from 'react-icons/gi';
+import { BsWhatsapp } from 'react-icons/bs';
+import { HiOutlineMail } from 'react-icons/hi';
+import { IoCallOutline } from 'react-icons/io5';
 import { IconContext } from 'react-icons/lib';
+import { Button } from '../../globalStyles';
 import {
-  PricingSection,
-  PricingWrapper,
-  PricingHeading,
-  PricingContainer,
   PricingCard,
-  PricingCardInfo,
-  PricingCardIcon,
-  PricingCardPlan,
-  PricingCardCost,
-  PricingCardLength,
+  PricingCardFeature,
   PricingCardFeatures,
-  PricingCardFeature
+  PricingCardIcon,
+  PricingCardInfo,
+  PricingCardPlan,
+  PricingContainer,
+  PricingHeading,
+  PricingSection,
+  PricingWrapper
 } from './Pricing.elements';
 
- const Pricing = () => {
+import {
+  FooterSubHeading,
+  FooterSubText,
+  FooterSubscription,
+  Form,
+  FormInput
+} from '../Footer/Footer.elements';
+
+const Pricing = () => {
   return (
     <IconContext.Provider value={{ color: '#a9b3c1', size: 64 }}>
-      <PricingSection>
+      <PricingSection id='contacto'>
         <PricingWrapper>
-          <PricingHeading>Our Services</PricingHeading>
+          <PricingHeading>Resuelve tus dudas</PricingHeading>
           <PricingContainer>
-            <PricingCard to='/sign-up'>
+            <PricingCard
+              href="https://wa.me/3127746612?text=Hola%2e%20Vengo%20desde%20Instalacionesviva%2ecom" target="_blank">
               <PricingCardInfo>
                 <PricingCardIcon>
-                  <GiRock />
+                  <BsWhatsapp />
                 </PricingCardIcon>
-                <PricingCardPlan>Starter Pack</PricingCardPlan>
-                <PricingCardCost>$99.99</PricingCardCost>
-                <PricingCardLength>per month</PricingCardLength>
+                <PricingCardPlan>+34 696 72 57 44</PricingCardPlan>
                 <PricingCardFeatures>
-                  <PricingCardFeature>100 New Users</PricingCardFeature>
-                  <PricingCardFeature>$10,000 Budget</PricingCardFeature>
-                  <PricingCardFeature>Retargeting analytics</PricingCardFeature>
+                  <PricingCardFeature>WhatsApp</PricingCardFeature>
                 </PricingCardFeatures>
-                <Button primary>Choose Plan</Button>
               </PricingCardInfo>
             </PricingCard>
             <PricingCard to='/sign-up'>
               <PricingCardInfo>
                 <PricingCardIcon>
-                  <GiCrystalBars />
+                  <HiOutlineMail />
                 </PricingCardIcon>
-                <PricingCardPlan>Gold Rush</PricingCardPlan>
-                <PricingCardCost>$299.99</PricingCardCost>
-                <PricingCardLength>per month</PricingCardLength>
+                <PricingCardPlan>instalacionesviva@gmail.com</PricingCardPlan>
                 <PricingCardFeatures>
-                  <PricingCardFeature>1000 New Users</PricingCardFeature>
-                  <PricingCardFeature>$50,000 Budget</PricingCardFeature>
-                  <PricingCardFeature>Lead Gen Analytics</PricingCardFeature>
+                  <PricingCardFeature>Correo</PricingCardFeature>
                 </PricingCardFeatures>
-                <Button primary>Choose Plan</Button>
               </PricingCardInfo>
             </PricingCard>
             <PricingCard to='/sign-up'>
               <PricingCardInfo>
                 <PricingCardIcon>
-                  <GiCutDiamond />
+                  <IoCallOutline />
                 </PricingCardIcon>
-                <PricingCardPlan>Diamond Kings</PricingCardPlan>
-                <PricingCardCost>$999.99</PricingCardCost>
-                <PricingCardLength>per month</PricingCardLength>
+                <PricingCardPlan>+34 696 72 57 44</PricingCardPlan>
                 <PricingCardFeatures>
-                  <PricingCardFeature>Unlimited Users</PricingCardFeature>
-                  <PricingCardFeature>Unlimited Budget</PricingCardFeature>
-                  <PricingCardFeature>24/7 Support</PricingCardFeature>
+                  <PricingCardFeature>Llámanos</PricingCardFeature>
                 </PricingCardFeatures>
-                <Button primary>Choose Plan</Button>
               </PricingCardInfo>
             </PricingCard>
           </PricingContainer>
         </PricingWrapper>
+        <FooterSubscription>
+          <FooterSubHeading>
+            ...O dejanos tu número o correo y nosotros te contactamos!
+          </FooterSubHeading>
+          <FooterSubText>Ingresa tu número o correo electrónico</FooterSubText>
+          <Form>
+            <FormInput name='email' type='email' placeholder='número/correo' />
+            <Button fontBig>Contáctame</Button>
+          </Form>
+        </FooterSubscription>
       </PricingSection>
     </IconContext.Provider>
   );

@@ -17,8 +17,16 @@ import { Link } from 'react-router-dom'
     img,
     alt,
     imgStart,
-    start
+    start,
+    imgDropShadowColor,
 }) => {
+
+    const scrollTo = (id) => {
+        document.getElementById(id).scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+
     return (
         <>
             <InfoSec lightBg={lightBg}>
@@ -29,8 +37,8 @@ import { Link } from 'react-router-dom'
                             <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                             <Heading lightText={lightText}>{headline}</Heading>
                             <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                            <Link to='/sign-up'>
-                            <Button big fontBig primary={primary}>
+                            <Link to='#contacto'>
+                            <Button big fontBig primary={primary} onClick={() => scrollTo('contacto')}>
                                 {buttonLabel}
                             </Button>
                             </Link>
@@ -38,7 +46,7 @@ import { Link } from 'react-router-dom'
                         </InfoColumn>
                         <InfoColumn>
                         <ImgWrapper start={start}>
-                            <Img src={img} alt={alt} />
+                            <Img src={img} alt={alt} lightBg={lightBg} imgDropShadowColor={imgDropShadowColor}/>
                         </ImgWrapper>
                         </InfoColumn>
                     </InfoRow>

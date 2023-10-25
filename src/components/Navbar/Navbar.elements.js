@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Container } from '../../globalStyles'
 import { FaMagento } from 'react-icons/fa'
+import { RiSunFoggyFill } from 'react-icons/ri'
 import { Link } from 'react-router-dom'
 
 export const Nav = styled.nav`
@@ -33,7 +34,7 @@ export const NavLogo = styled(Link)`
     align-items: center;
 `
 
-export const NavIcon = styled(FaMagento)`
+export const NavIcon = styled(RiSunFoggyFill)`
     margin-right: 0.5rem;
 
 `

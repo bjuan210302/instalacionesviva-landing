@@ -4,14 +4,14 @@ import styled from 'styled-components';
 export const InfoSec = styled.div`
     color: #fff;
     padding: 160px 0;
-    background: ${({lightBg}) => (lightBg ? '#fff' : '#101522')};
+    background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')};
 `
 
 export const InfoRow = styled.div`
   display: flex;
   margin: 0 -15px -15px -15px;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: ${({ imgStart }) => (imgStart ? 'row-reverse' : 'row')};
 `;
 
@@ -75,6 +75,9 @@ export const Img = styled.img`
   vertical-align: middle;
   display: inline-block;
   max-height: 500px;
+  filter: ${({ imgDropShadowColor }) => imgDropShadowColor ? `drop-shadow(-7px 7px 0px ${imgDropShadowColor});` : ''}
+  border: ${({ imgDropShadowColor }) => imgDropShadowColor ? `1px solid ${imgDropShadowColor};` : ''}
+  }; 
 `;
 
 export const Heading = styled.h1`

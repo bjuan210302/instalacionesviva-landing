@@ -6,7 +6,7 @@ export const PricingSection = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #4b59f7;
+  background: #101522;
 `;
 
 export const PricingWrapper = styled.div`
@@ -41,11 +41,9 @@ export const PricingContainer = styled.div`
   }
 `;
 
-export const PricingCard = styled(Link)`
-  background: #242424;
-  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2);
-  width: 280px;
-  height: 500px;
+export const PricingCard = styled.a`
+  background: #fff;
+  min-width: 280px;
   text-decoration: none;
   border-radius: 4px;
   &:nth-child(2) {
@@ -53,8 +51,8 @@ export const PricingCard = styled(Link)`
   }
   &:hover {
     transform: scale(1.06);
-    transition: all 0.3s ease-out;
-    color: #1c2237;
+    transition: all 0.1s ease-out;
+    color: #fff;
   }
   @media screen and (max-width: 960px) {
     width: 90%;
@@ -67,10 +65,9 @@ export const PricingCard = styled(Link)`
 export const PricingCardInfo = styled.div`
   display: flex;
   flex-direction: column;
-  height: 500px;
   padding: 24px;
   align-items: center;
-  color: #fff;
+  color: #666;
 `;
 
 export const PricingCardIcon = styled.div`

@@ -59,6 +59,11 @@ function Navbar() {
 
     window.addEventListener('resize', showButton);
 
+    const scrollTo = (id) => {
+        document.getElementById(id).scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
     return (
         <>
         <IconContext.Provider value={{ color: '#fff' }}>
@@ -66,40 +71,30 @@ function Navbar() {
                 <NavbarContainer>
                     <NavLogo to='/'> 
                         <NavIcon />
-                            ULTRA
+                            Instalaciones Viva
                     </NavLogo>
-                    <HamburgerIcon onClick={handleClick}>
-                        {click ? <FaTimes /> : <FaBars />}
-                    </HamburgerIcon>
                     <NavMenu onClick={handleClick} click={click} >
                         <NavItem onClick={handleHomeClick} homeClick={homeClick}>
                             <NavLinks to='/' onClick={closeMobileMenu}>
-                                Home
+                                Inicio
                             </NavLinks>
                         </NavItem>
                     
                     
                         <NavItem onClick={handleServicesClick} servicesClick={servicesClick}>
-                            <NavLinks to='/services' onClick={closeMobileMenu}>
-                                Services
-                            </NavLinks>
-                        </NavItem>
-                    
-                    
-                        <NavItem onClick={handleProductsClick} productsClick={productsClick}>
-                            <NavLinks to='/Products' onClick={closeMobileMenu}>
-                                Products
+                            <NavLinks to='#services' onClick={closeMobileMenu}>
+                                Servicios
                             </NavLinks>
                         </NavItem>
 
-                        <NavItemBtn >
+                        <NavItemBtn onClick={() => scrollTo('contacto')}>
                             {button ? (
-                                <NavBtnLink to='/sign-up'>
-                                    <Button primary>SIGN UP</Button>
+                                <NavBtnLink to='#contacto'>
+                                    <Button primary>CONTÁCTANOS</Button>
                                 </NavBtnLink>
                             ) : (
-                                <NavBtnLink to='/sign-up'>
-                                    <Button onClick={closeMobileMenu} fontBig primary>SIGN UP</Button>
+                                <NavBtnLink to='#contacto'>
+                                    <Button onClick={closeMobileMenu} fontBig primary>CONTÁCTANOS</Button>
                                 </NavBtnLink>
                             )}
                             
