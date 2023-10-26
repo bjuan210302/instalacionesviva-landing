@@ -33,7 +33,7 @@ const Pricing = () => {
           <PricingHeading>Resuelve tus dudas</PricingHeading>
           <PricingContainer>
             <PricingCard
-              href="https://wa.me/3127746612?text=Hola%2e%20Vengo%20desde%20Instalacionesviva%2ecom" target="_blank">
+              href="https://wa.me/34696725744?text=Hola%2e%20Vengo%20desde%20Instalacionesviva%2ecom" target="_blank">
               <PricingCardInfo>
                 <PricingCardIcon>
                   <BsWhatsapp />
@@ -68,7 +68,7 @@ const Pricing = () => {
             </PricingCard>
           </PricingContainer>
         </PricingWrapper>
-        <FooterSubscription>
+        {/* <FooterSubscription>
           <FooterSubHeading>
             ...O dejanos tu número o correo y nosotros te contactamos!
           </FooterSubHeading>
@@ -77,7 +77,7 @@ const Pricing = () => {
             <FormInput name='email' type='email' placeholder='número/correo' />
             <Button fontBig>Contáctame</Button>
           </Form>
-        </FooterSubscription>
+        </FooterSubscription> */}
       </PricingSection>
     </IconContext.Provider>
   );

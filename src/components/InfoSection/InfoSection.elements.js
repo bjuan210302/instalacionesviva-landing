@@ -95,3 +95,85 @@ export const Subtitle = styled.p`
   line-height: 24px;
   color: ${({ lightTextDesc }) => (lightTextDesc ? '#a9b3c1' : '#1c2237')};
 `;
+
+// For services
+export const ServiceInfoSec = styled.div`
+    color: #fff;
+    padding-top: 160px;
+    padding-bottom: 70px;
+    background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')};
+`
+
+export const ServiceTitle = styled.h2`
+  margin-bottom: 12px;
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#1c2237')};
+`;
+
+export const ServiceSubtitle = styled.p`
+  max-width: 440px;
+  font-size: 18px;
+  line-height: 24px;
+  color: ${({ lightTextDesc }) => (lightTextDesc ? '#a9b3c1' : '#1c2237')};
+`;
+
+export const ServiceTextWrapper = styled.div`
+  max-width: 540px;
+  padding-top: 0;
+
+  @media (min-width: 480px) and (max-width: 1200px) {
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    padding-bottom: 65px;  
+  }
+`;
+
+export const InfoColumnWithIcon = styled.div`
+  padding-right: 120px;
+  padding-left: 15px;
+  padding-bottom: 130px;
+
+  display: flex;
+  flex: 1;
+  max-width: 50%;
+  flex-basis: 50%;
+
+  @media (min-width: 480px) and (max-width: 1200px) {
+    padding-right: 15px;
+    padding-bottom: 70px;
+    max-width: 100%;
+    flex-basis: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    padding-right: 15px;
+    padding-bottom: 15px;
+    max-width: 100%;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+`;
+
+export const InfoColumnIcon = styled.div`
+padding-right: 20px;
+display: flex;
+align-items: center;
+font-size: 6rem;
+opacity: 1;
+
+@media (min-width: 480px) and (max-width: 1200px) {
+  
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  display: none;
+}
+`;
