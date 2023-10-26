@@ -3,7 +3,6 @@ import { BsWhatsapp } from 'react-icons/bs';
 import { HiOutlineMail } from 'react-icons/hi';
 import { IoCallOutline } from 'react-icons/io5';
 import { IconContext } from 'react-icons/lib';
-import { Button } from '../../globalStyles';
 import {
   PricingCard,
   PricingCardFeature,
@@ -17,13 +16,6 @@ import {
   PricingWrapper
 } from './Pricing.elements';
 
-import {
-  FooterSubHeading,
-  FooterSubText,
-  FooterSubscription,
-  Form,
-  FormInput
-} from '../Footer/Footer.elements';
 
 const Pricing = () => {
   return (

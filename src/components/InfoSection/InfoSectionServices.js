@@ -1,14 +1,19 @@
 import React from 'react'
-import {
-    InfoSec, InfoRow, ServiceInfoSec, ServiceTextWrapper, TopLine, Heading, ServiceSubtitle, ImgWrapper, Img, ServiceTitle,
-    InfoColumnWithIcon, InfoColumnIcon
-} from './InfoSection.elements'
-import { Container, Button } from '../../globalStyles'
-import { Link } from 'react-router-dom'
-import { CgSize } from 'react-icons/cg'
-import { RiListSettingsLine } from 'react-icons/ri'
 import { AiOutlineBuild } from 'react-icons/ai'
+import { CgSize } from 'react-icons/cg'
 import { GoLaw } from 'react-icons/go'
+import { RiListSettingsLine } from 'react-icons/ri'
+import { Container } from '../../globalStyles'
+import {
+    InfoColumnIcon,
+    InfoColumnWithIcon,
+    InfoRow, ServiceInfoSec,
+    ServiceSubtitle,
+    ServiceTextWrapper,
+    ServiceTitle
+} from './InfoSection.elements'
+
+// eslint-disable-next-line
 const InfoSectionServices = ({
 
     primary,
@@ -27,6 +32,7 @@ const InfoSectionServices = ({
     imgDropShadowColor,
 }) => {
 
+    // eslint-disable-next-line
     const scrollTo = (id) => {
         document.getElementById(id).scrollIntoView({
             behavior: 'smooth'
