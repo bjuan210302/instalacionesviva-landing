@@ -2,8 +2,6 @@ import React from 'react';
 import {
   FaFacebook,
   FaInstagram,
-  FaLinkedin,
-  FaTwitter,
   FaYoutube
 } from 'react-icons/fa';
 import {
@@ -31,7 +29,7 @@ function Footer() {
           </SocialLogo>
           <WebsiteRights>Instalaciones Viva © {date.getFullYear()} </WebsiteRights>
           <SocialIcons>
-            <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
+            <SocialIconLink href='https://www.facebook.com/profile.php?id=61552746037128' target='_blank' aria-label='Facebook'>
               <FaFacebook />
             </SocialIconLink>
             <SocialIconLink href='/' target='_blank' aria-label='Instagram'>
@@ -39,12 +37,6 @@ function Footer() {
             </SocialIconLink>
             <SocialIconLink href='/' target='_blank' aria-label='YouTube' >
               <FaYoutube />
-            </SocialIconLink>
-            <SocialIconLink href='/' target='_blank' aria-label='Twitter'>
-              <FaTwitter />
-            </SocialIconLink>
-            <SocialIconLink href='/' target='_blank' aria-label='LinkedIn'>
-              <FaLinkedin />
             </SocialIconLink>
           </SocialIcons>
         </SocialMediaWrap>
